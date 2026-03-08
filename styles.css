@@ -163,23 +163,23 @@ body {
     text-decoration: none;
     font-size: 28px;
     font-weight: bold;
-    color: #000000;
+    color: #ffffff;
     transition: all 0.3s ease;
 }
 
 #main:hover {
     transform: translateY(-2px);
-    color: #007BFF;
+    color: #667eea;
 }
 
 .blue-zz {
-    color: #007BFF;
+    color: #667eea;
     transition: all 0.3s ease;
 }
 
 #main:hover .blue-zz {
-    color: #ff9900;
-    text-shadow: 0 0 8px #ff9900;
+    color: #f093fb;
+    text-shadow: 0 0 15px rgba(240, 147, 251, 0.6);
 }
 
 @media (max-width: 900px) {
@@ -324,22 +324,6 @@ hr {
     filter: brightness(1.15) saturate(1.2);
     box-shadow: 0 35px 90px rgba(102, 126, 234, 0.5);
     border-color: rgba(102, 126, 234, 0.4);
-}
-
-.cursor {
-    display: inline-block;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    width: 3px;
-    margin-left: 3px;
-    height: 2.5rem;
-    vertical-align: text-bottom;
-    animation: blink 1s infinite, cursorGlow 2s ease-in-out infinite;
-    border-radius: 2px;
-}
-
-@keyframes blink {
-    0%, 50%, 100% { opacity: 1; }
-    25%, 75% { opacity: 0; }
 }
 
 @media (max-width: 900px) {

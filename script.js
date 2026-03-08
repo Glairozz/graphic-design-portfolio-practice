@@ -58,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Enhanced scroll animations with Intersection Observer
     const scrollObserverOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -80px 0px'
@@ -74,7 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, scrollObserverOptions);
 
-    // Elements to animate on scroll
     const animateElements = document.querySelectorAll('.hero-content, .image-container, .project-item, .certificates, .skill-card, .education-small, .three-column > div');
     
     animateElements.forEach(el => {
@@ -84,7 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
         scrollObserver.observe(el);
     });
 
-    // Add staggered animation delays
     const skillCards = document.querySelectorAll('.skill-card');
     skillCards.forEach((card, index) => {
         card.style.transitionDelay = `${index * 0.1}s`;
@@ -95,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
         item.style.transitionDelay = `${index * 0.15}s`;
     });
 
-    // Smooth scroll behavior
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -106,7 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Parallax effect on scroll
     let ticking = false;
     window.addEventListener('scroll', () => {
         if (!ticking) {
@@ -122,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Add active nav highlighting based on scroll position
     const sections = document.querySelectorAll('section, .hero-section, #projects, .three-column');
     const navLinks = document.querySelectorAll('.main-nav a');
     
