@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let current = '';
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            if (pageYOffset >= sectionTop - 200) {
+            if (window.pageYOffset >= sectionTop - 200) {
                 current = section.getAttribute('id');
             }
         });
@@ -138,4 +138,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-type();
+if (typedText) {
+    type();
+}
